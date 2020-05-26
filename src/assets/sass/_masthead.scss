@@ -6,9 +6,9 @@
   padding: 15rem 0;
   background: linear-gradient(
       to bottom,
-      #{fade-out($black, 0.7)} 0%,
-      #{fade-out($black, 0.3)} 75%,
-      $black 100%
+      #{fade-out($black, 0.9)} 0%,
+      #{fade-out($white, 1)} 75%,
+      $white 100%
     ),
     url('../images/bg-masthead.jpg');
   background-position: center;
@@ -16,7 +16,7 @@
   background-attachment: scroll;
   background-size: cover;
   h1 {
-    font-family: 'Varela Round';
+    font-family: 'Roboto';
     font-size: 2.5rem;
     line-height: 2.5rem;
     letter-spacing: 0.8rem;
@@ -30,6 +30,13 @@
   h2 {
     max-width: 20rem;
     font-size: 1rem;
+    color: white;
+  }
+  p {
+    color: white;
+  }
+  .splash-container {
+    padding-top: 10vh;
   }
   @media (min-width: 768px) {
     h1 {
@@ -47,7 +54,8 @@
     }
     h2 {
       max-width: 30rem;
-      font-size: 1.25rem;
+      font-size: 2.8rem;
+      font-weight: bold;
     }
   }
 }

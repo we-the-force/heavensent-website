@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
 import config from '../../config';
+import logoLanding from '../assets/images/logo-landing.svg';
+import logoLandingColor from '../assets/images/logo-landing-color.svg';
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -41,7 +43,8 @@ export default class Header extends Component {
       >
         <div className="container">
           <a className="navbar-brand" href="#page-top">
-            {config.siteTitle}
+            <img src={logoLanding} alt="" className="black"/>
+            <img src={logoLandingColor} alt="" className="white"/>
           </a>
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
@@ -65,32 +68,10 @@ export default class Header extends Component {
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}
                   type="id"
-                  element="about"
+                  element="suscribe"
                 >
-                  <a className="nav-link" href="#about">
-                    About
-                  </a>
-                </Scroll>
-              </li>
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="projects"
-                >
-                  <a className="nav-link" href="#projects">
-                    Projects
-                  </a>
-                </Scroll>
-              </li>
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="signup"
-                >
-                  <a className="nav-link" href="#signup">
-                    Contact
+                  <a className="nav-link" href="#suscribe">
+                    Suscribe
                   </a>
                 </Scroll>
               </li>
