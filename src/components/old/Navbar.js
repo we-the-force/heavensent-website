@@ -3,7 +3,7 @@ import Scroll from './Scroll';
 import config from '../../config';
 import logoLanding from '../assets/images/logo-landing.svg';
 import logoLandingColor from '../assets/images/logo-landing-color.svg';
-export default class Header extends Component {
+export default class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -47,7 +47,7 @@ export default class Header extends Component {
             <img src={logoLandingColor} alt="" className="white"/>
           </a>
           <button
-            onClick={_ => this.toggleMenu(!openMenu)}
+            onClick={() => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
               openMenu ? '' : 'collapsed'
             }`}
@@ -66,7 +66,7 @@ export default class Header extends Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
+                  onClick={() => this.toggleMenu(!openMenu)}
                   type="id"
                   element="suscribe"
                 >

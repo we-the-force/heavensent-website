@@ -1,25 +1,22 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import Scroll from '../components/Scroll';
+/* import Scroll from '../components/Scroll';
 
-import config from '../../config';
 import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
-import Subscribe from '../components/Subscribe';
-import Header from '../components/Header';
+import Subscribe from '../components/Subscribe'; */
+import Navbar from '../components/Navbar';
 
-import ipad from '../assets/images/ipad.png';
-import demoImage1 from '../assets/images/demo-image-01.jpg';
-import demoImage2 from '../assets/images/demo-image-02.jpg';
-import bgMaster from '../assets/images/bg-masthead.jpg';
-import appScreen from '../assets/images/splash-app-screen.png';
+/* import appScreen from '../assets/images/splash-app-screen.png'; */
 
 const IndexPage = () => (
   <Layout>
-    <Header />
-
+    <Navbar />
     <header className="masthead">
+      
+    </header>
+    {/* <header className="masthead">
       <div className="container d-flex h-100 align-items-center">
         <div className="row">
           <div className="col-lg-6 col-xs-12 col-sm-12">
@@ -40,24 +37,20 @@ const IndexPage = () => (
           </div>
         </div>
         <div className="mx-auto text-center">
-          {/* <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
-          <h2 className="text-white-50 mx-auto mt-2 mb-5">
-            {config.subHeading}
-          </h2> */}
           
           
         </div>
       </div>
-    </header>
+    </header> */}
 
     
 
     
-    <SocialLinks />      
+    {/* <SocialLinks />      
     <Subscribe />
 
     
-    <Footer />
+    <Footer /> */}
   </Layout>
 );
 
