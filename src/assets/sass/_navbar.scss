@@ -13,7 +13,7 @@
   .navbar-brand {
     color: $black;
     font-weight: 700;
-    padding: .9rem 0;
+    padding: 0.9rem 0;
     display: inline-block;
     width: 25%;
     img {
@@ -41,6 +41,27 @@
       }
     }
   }
+  #lang-btn {
+    right: 30px;
+    background: rgba(92, 92, 92, 0.3);
+    border-radius: 2px;
+    padding: 0px 6px;
+    a,
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #d2d2d2;
+      margin: 2px;
+      &.active {
+        color: $white;
+      }
+    }
+  }
   @media (min-width: 992px) {
     padding-top: 0;
     padding-bottom: 0;
@@ -48,19 +69,29 @@
     background-color: transparent;
     transition: background-color 0.6s ease-in-out;
     .navbar-brand {
-      padding: .5rem 0;
-      color: fade-out($white, .5);
-      
+      padding: 0.5rem 0;
+      color: fade-out($white, 0.5);
     }
     .nav-link {
       transition: none;
-      padding: 2rem 1.5rem;
-      color: fade-out($white, .5);
-      &:hover {
-        color: fade-out($white, .25);
+      padding: 0px;
+      margin: 2rem 1.5rem;
+      color: white;
+      &:hover:after {
+        width: 100%;
+        background: white;
       }
       &:active {
         color: white;
+      }
+      &:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 1.2px;
+        width: 0px;
+        background: transparent;
+        transition: width 0.5s ease, background-color 0.5s ease;
       }
     }
     &.navbar-shrink {
@@ -70,7 +101,7 @@
       }
       .nav-link {
         color: $black;
-        padding: 1.5rem 1.5rem 1.25rem;
+        //padding: 1.5rem 1.5rem 1.25rem;
         border-bottom: 0.25rem solid transparent;
         &:hover {
           color: $primary;
@@ -82,6 +113,15 @@
           color: $primary;
           outline: none;
           border-bottom: 0.25rem solid $primary;
+        }
+      }
+      #lang-btn {
+        a,
+        p {
+          color: $gray-600;
+          &.active {
+            color: $white;
+          }
         }
       }
     }

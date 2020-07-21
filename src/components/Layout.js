@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/sass/grayscale.scss';
 
 class Layout extends Component {

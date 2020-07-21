@@ -12,10 +12,10 @@
     ),
     url('../images/bg-v2.png'); */
   background: url('../images/bg-v2.png');
-  background-position: center;
+  background-position: initial;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 100%;
   h1 {
     font-family: 'Roboto';
     font-size: 2.5rem;
@@ -38,6 +38,13 @@
   }
   .splash-container {
     padding-top: 10vh;
+  }
+  .foot {
+    bottom: 0;
+    margin-bottom: 40px;
+  }
+  .app-screen img{
+    transform: translate(-15.895px, 0px);
   }
   @media (min-width: 768px) {
     h1 {
