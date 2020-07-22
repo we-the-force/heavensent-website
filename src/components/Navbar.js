@@ -74,19 +74,37 @@ export default class Navbar extends Component {
                             </Scroll>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#reviews">
-                                RESEÑAS
+                            <Scroll
+                                onClick={() => this.toggleMenu(!openMenu)}
+                                type="id"
+                                element="reviews"
+                            >
+                                <a className="nav-link" href="#reviews">
+                                    RESEÑAS
                             </a>
+                            </Scroll>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#download">
-                                DESCARGAS
+                            <Scroll
+                                onClick={() => this.toggleMenu(!openMenu)}
+                                type="id"
+                                element="download"
+                            >
+                                <a className="nav-link" href="#download">
+                                    DESCARGAS
                             </a>
+                            </Scroll>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#price">
-                                PRECIO
+                            <Scroll
+                                onClick={() => this.toggleMenu(!openMenu)}
+                                type="id"
+                                element="price"
+                            >
+                                <a className="nav-link" href="#price">
+                                    PRECIO
                             </a>
+                            </Scroll>
                         </li>
                     </ul>
                     <div id="lang-btn" className="position-absolute d-flex">

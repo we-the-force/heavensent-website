@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import photo from '../assets/images/Frame 14.png';
-import { Carousel } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 import photo1 from '../assets/images/iStock-971053374-2000x1200 1.png';
 import photo2 from '../assets/images/banff-canada-landscape-5k-8p 1.png';
 

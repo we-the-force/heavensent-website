@@ -10,6 +10,9 @@
 @import 'contact.scss';
 @import 'footer.scss';
 @import 'features.scss';
+@import 'reviews.scss';
+@import 'download.scss';
+@import 'price.scss';
 
 @import './fontawesome/css/all.min.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -43,4 +46,8 @@ a {
 
 footer {
   padding: 5rem 0;
+}
+
+.logo-foot-section{
+  padding: 178px 0px;
 }
