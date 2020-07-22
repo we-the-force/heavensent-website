@@ -36,13 +36,13 @@ class Features extends Component {
         var items = this.state.features_items;
         return (
             <section id="features" className="features-section d-flex flex-column justify-content-center">
-                <div className="container d-flex mx-0 mw-100">
-                    <div className="col">
-                        <div className="ml-n30">
+                <div className="container d-flex mx-0 px-0 mw-100">
+                    <div className="col pl-0">
+                        <div>
                             <img src={photo} className="w-100"></img>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col pr-0 carousel_cont">
                         <h1 className="features-title">CARACTERISTICAS</h1>
                         <Carousel interval={null}>
                             {items.map((item,i) => {

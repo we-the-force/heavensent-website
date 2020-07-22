@@ -1,4 +1,78 @@
 .features-section {
-    height: 100vh;
-    padding-top: 5.85rem;
+  height: 100vh;
+  padding-top: 5.85rem;
+  .features-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #707070;
+    padding: 0px 17%;
+    margin-bottom: 20px;
+  }
+  .carousel_cont {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+  }
+  .carousel {
+    flex-grow: 1;
+    padding: 0px 17%;
+    display: flex;
+    flex-direction: column;
+    .carousel-indicators {
+      order: 2;
+      position: relative;
+      background-image: yellow;
+    }
+    .carousel-inner {
+      order: 1;
+      flex-grow: 1;
+      .carousel-item {
+        height: 100%;
+        .feat_Title {
+          text-align: left;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 28px;
+          text-transform: uppercase;
+          color: #454545;
+          margin-bottom: 56px;
+        }
+        .feat_desc {
+          text-align: left;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          color: #707070;
+        }
+      }
+    }
+    .carousel-control-prev {
+      bottom: 0;
+      top: unset;
+      margin-left: calc(17% + 9px);
+      margin-bottom: 16px;
+      width: 50px;
+      height: 50px;
+      background: #f9f9f9;
+      box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12), -2px -2px 4px rgba(255, 255, 255, 0.9), inset 0px 1px 0px #fdfdfd, inset 0px -1px 0px Grey_light_2;
+    }
+    .carousel-control-next {
+      bottom: 0;
+      top: unset;
+      margin-right: calc(17% + 9px);
+      margin-bottom: 16px;
+      width: 50px;
+      height: 50px;
+      background: red;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 #mainNav {
   min-height: 56px;
-  background-color: $white;
+  background-color: #f9f9f9;
   .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
@@ -73,13 +73,21 @@
       color: fade-out($white, 0.5);
     }
     .nav-link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
       transition: none;
       padding: 0px;
       margin: 2rem 1.5rem;
       color: white;
       &:hover:after {
         width: 100%;
-        background: white;
+        background: #f9f9f9;
       }
       &:active {
         color: white;
@@ -95,7 +103,7 @@
       }
     }
     &.navbar-shrink {
-      background-color: $white;
+      background-color: #f9f9f9;
       .navbar-brand {
         color: $black;
       }

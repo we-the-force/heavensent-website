@@ -36,9 +36,9 @@ class Price extends Component {
                             <p>Notas de texto</p>
                         </div>
                         <div className="col-9">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i className="fa fa-check" aria-hidden="true"></i>
+                            <i className="fa fa-check" aria-hidden="true"></i>
+                            <i className="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div className="row">
@@ -46,9 +46,9 @@ class Price extends Component {
                             <p>Imagenes</p>
                         </div>
                         <div className="col-9">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i className="fa fa-check" aria-hidden="true"></i>
+                            <i className="fa fa-check" aria-hidden="true"></i>
+                            <i className="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div className="row">
@@ -56,9 +56,9 @@ class Price extends Component {
                             <p>Video</p>
                         </div>
                         <div className="col-9">
-                            <i class="fa fa-times" aria-hidden="true"></i>
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i className="fa fa-times" aria-hidden="true"></i>
+                            <i className="fa fa-check" aria-hidden="true"></i>
+                            <i className="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div className="row">
@@ -66,9 +66,9 @@ class Price extends Component {
                             <p>GPS</p>
                         </div>
                         <div className="col-9">
-                            <i class="fa fa-times" aria-hidden="true"></i>
-                            <i class="fa fa-times" aria-hidden="true"></i>
-                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i className="fa fa-times" aria-hidden="true"></i>
+                            <i className="fa fa-times" aria-hidden="true"></i>
+                            <i className="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div className="row">
@@ -76,9 +76,9 @@ class Price extends Component {
                             <p>Bajo demanda</p>
                         </div>
                         <div className="col-9">
-                            <i class="fa fa-times" aria-hidden="true"></i>
-                            <i class="fa fa-times" aria-hidden="true"></i>
-                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i className="fa fa-times" aria-hidden="true"></i>
+                            <i className="fa fa-times" aria-hidden="true"></i>
+                            <i className="fa fa-check" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
