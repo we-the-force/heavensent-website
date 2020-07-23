@@ -32,6 +32,10 @@ class Features extends Component {
             "Desc": "Disponible en inglés y español."
         }]
     }
+    componentDidMount() {
+        document.querySelectorAll('.carousel-control-prev')[0].innerHTML = "<i class='fas fa-chevron-left'></i>";
+        document.querySelectorAll('.carousel-control-next')[0].innerHTML = "<i class=\"fas fa-chevron-right\"></i>";
+    }
     render() {
         var items = this.state.features_items;
         return (

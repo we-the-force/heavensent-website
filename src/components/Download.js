@@ -4,18 +4,30 @@ import app_store from '../assets/images/apple.png';
 import google_play from '../assets/images/google.png';
 
 class Download extends Component {
-    getsqr = (x,y,p_x,p_y) => {
-        console.log('poner fondo aqui');
+    getsqr = (x,y,t,l) => {
+        const style = {
+            width: x,
+            height: y,
+            background: "#FCFCFC",
+            boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.04)",
+            borderRadius: "20px",
+            transform: "rotate(-1.5deg) translate(-50%, -50%)",
+            position: "absolute",
+            top: t,
+            left: l,
+
+        }
+        return (<div style={style}></div>)
     }
     state = {}
     render() {
         var state = this.state;
         return (
             <section id="download" className="download-section d-flex flex-column justify-content-center">
-                {this.getsqr('5','6','5','6')}
-                {this.getsqr('5','6','5','6')}
-                {this.getsqr('5','6','5','6')}
-                <div className="container">
+                {this.getsqr('600px','450px','35%','0%')}
+                {this.getsqr('810.26px','607.7px','50%','50%')}
+                {this.getsqr('600px','450px','65%','100%')}
+                <div className="container d-flex flex-column justify-content-center align-items-center">
                     <h1 className="download-title">DESCARGA</h1>
                     <div className="images">
                         <img src={photo} alt=""/>

@@ -1,6 +1,6 @@
 .features-section {
   height: 100vh;
-  padding-top: 5.85rem;
+  //padding-top: 5.85rem;
   .features-title {
     font-family: Roboto;
     font-style: normal;
@@ -26,7 +26,23 @@
     .carousel-indicators {
       order: 2;
       position: relative;
-      background-image: yellow;
+      margin: 0px 59px 16px 59px;
+      height: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0px 22px;
+      li {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        background: #d6d6d6;
+        box-sizing: border-box;
+        opacity: 1;
+        &.active {
+          background: #76BDE5;
+        }
+      }
     }
     .carousel-inner {
       order: 1;
@@ -62,8 +78,18 @@
       margin-bottom: 16px;
       width: 50px;
       height: 50px;
-      background: #f9f9f9;
-      box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12), -2px -2px 4px rgba(255, 255, 255, 0.9), inset 0px 1px 0px #fdfdfd, inset 0px -1px 0px Grey_light_2;
+      background:#f9f9f9;
+      border-radius: 50%;
+      box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12), -2px -2px 4px rgba(255, 255, 255, 0.9), inset 0px 2px 0px #fdfdfd, inset 0px -2px 0px #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.5px solid #F5F5F5;
+      
+      i {
+        font-size: 20px;
+        color: #999999;
+      }
     }
     .carousel-control-next {
       bottom: 0;
@@ -72,7 +98,18 @@
       margin-bottom: 16px;
       width: 50px;
       height: 50px;
-      background: red;
+      background:#f9f9f9;
+      border-radius: 50%;
+      box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12), -2px -2px 4px rgba(255, 255, 255, 0.9), inset 0px 2px 0px #fdfdfd, inset 0px -2px 0px #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.5px solid #F5F5F5;
+      
+      i {
+        font-size: 20px;
+        color: #999999;
+      }
     }
   }
 }

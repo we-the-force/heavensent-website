@@ -10,7 +10,7 @@ import Features from '../components/Features';
 import Reviews from '../components/Reviews';
 import Download from '../components/Download';
 import Price from '../components/Price';
-import Footer from '../components/old/Footer';
+import Footer from '../components/Footer';
 
 /* import appScreen from '../assets/images/splash-app-screen.png'; */
 

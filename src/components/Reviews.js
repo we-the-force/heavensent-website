@@ -36,7 +36,8 @@ class Reviews extends Component {
                         {items.map((item, i) => {
                             return (<Carousel.Item key={i}>
                                 <Card className="d-flex flex-row">
-                                    <div>“</div>
+                                    <div className="left-side d-flex justify-content-center align-items-end"> <p>“</p> </div>
+                                    <hr/>
                                     <Card.Body>
                                         <Card.Title>- {item.Title}</Card.Title>
                                         <Card.Text>

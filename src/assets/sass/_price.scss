@@ -1,8 +1,135 @@
 .price-section {
-    height: 100vh;
-    padding-top: 5.85rem;
-    p {
-      margin-bottom: 5rem;
+  height: 100vh;
+  //padding-top: 5.85rem;
+  p {
+    margin-bottom: 5rem;
+  }
+  .container {
+    .price-title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #707070;
+      margin-bottom: 20px;
+    }
+    .price-subtitle {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+      color: #707070;
+      margin-bottom: 76px;
+    }
+    .plan {
+      width: 150px;
+      height: 150px;
+      padding: 8px;
+      h3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 24px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .price {
+        p {
+          margin: 0px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 41px;
+          line-height: 42px;
+          text-align: center;
+          color: #f9f9f9;
+        }
+        .small {
+          font-size: 15px;
+        }
+      }
+      p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0px;
+      }
+      &.blue-1 {
+        background-image: url('../images/blue_1_rect.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      &.blue-2 {
+        background-image: url('../images/blue_2_rect.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      &.blue-3 {
+        background-image: url('../images/blue_3_rect.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+    .row {
+      &.border-bottom {
+        border-bottom: 1px solid #d2d2d2 !important;
+        .col-3 {
+          padding-left: 77px;
+          p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;
+            color: #929292;
+            margin: 20px 0px;
+          }
+        }
+        .col-9 {
+          i {
+            font-size: 30px;
+            &.blue-1 {
+              color: #b7e3ee;
+            }
+            &.blue-2 {
+              color: #9dd6ea;
+            }
+            &.blue-3 {
+              color: #76bde5;
+            }
+            &:before {
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #707070;
+            margin: 10px 0px;
+            width: 20%;
+          }
+        }
+      }
+      &.prices {
+        margin-bottom: 10px;
+      }
     }
   }
-  
+}

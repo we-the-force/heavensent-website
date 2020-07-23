@@ -1,7 +1,67 @@
 .reviews-section {
   height: 100vh;
-  padding-top: 5.85rem;
+  //padding-top: 5.85rem;
   p {
     margin-bottom: 5rem;
+  }
+  .carousel {
+    .carousel-inner {
+      padding: 0px 10%;
+      .card {
+        background: #ffffff;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        border: none;
+        padding: 14px;
+        hr {
+          height: 100%;
+          width: 1px;
+          background: #f0f0f0;
+        }
+        .left-side {
+          padding: 0px 23px;
+          p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 96px;
+            line-height: 96px;
+            text-transform: capitalize;
+            color: #76bde5;
+            margin: 0px;
+          }
+        }
+        .card-title {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 15px;
+          text-transform: capitalize;
+          color: #454545;
+          margin-bottom: 18px;
+        }
+        .card-text {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          color: #707070;
+        }
+      }
+    }
+    .carousel-indicators {
+      margin-bottom: 24px;
+      position: relative;
+      li {
+        margin: 0px 14px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    }
   }
 }
