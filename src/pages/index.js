@@ -44,7 +44,7 @@ export default class IndexPage extends Component {
                         <img src={appScreen} alt="" />
                     </div>
                     <div className="foot position-absolute d-flex flex-column align-items-center">
-                        <p>crea, selecciona y envía tus memorias</p>
+                        <p>CREATE, CHOOSE AND SEND YOUR MEMORIES</p>
                         <img src={arrowDown} alt="" />
                     </div>
                 </header>

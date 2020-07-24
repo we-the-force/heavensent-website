@@ -7,12 +7,11 @@ export default function About() {
         <section id="about" className="about-section d-flex flex-column justify-content-top">
             <div className="container d-flex">
                 <div id="text" className="col">
-                    <h1 className="about-title">Acerca</h1>
+                    <h1 className="about-title">About</h1>
                     <div className="about-desc">
-                        <p> Al momento de partir, nuestros seres queridos tienen la posibilidad de recordarnos mediante todos los momentos que compartimos juntos. Puede ser algo tan sencillo como un cumpleaños, un aniversario, unas vacaciones juntos, o algo más específico como un evento especial, un lugar o un momento. Queremos preservar en el tiempo todas estas memorias que alguna vez compartimos con ellos en nuestras almas y corazones.</p>
-                        <p>Heaven Sent es una app con una muy sencilla e intuitiva plataforma que te permitirá capturar todos estos momentos; haciéndote posible subir todas las imágenes, videos, audios o mensajes que desees sobre esos momentos especiales.</p>
-                        <p>Estas memorias serán guardadas y se compartirán con tus amigos o familia en el tiempo que tú lo decidas; una vez compartido, tus seres queridos podrán revisitar esta memoria cuantas veces lo deseen.</p>
-                        <p>Forma parte de tus seres queridos aún después de partir.</p>
+                        <p>When we leave this world, our friends and family members will always remember us by the memories we created together. It may be something as simple as a birthday, anniversary, or holiday shared or something as specific as a special event, place, or even moment. We want to preserve these memories in time that were shared in our hearts and souls.</p>
+                        <p>HeavenSent is an app with a very simple and intuitive platform that enables us to capture these memories. It makes it possible to upload images, videos, audio, and messages of all those special moments that you experienced together. These memories are saved and then shared with your friends and family on specific dates that you establish.  After the memory has been shared, your family member or friend will be able to revisit it anytime they desire.</p>
+                        <p>The app provides you with the capability to still be part of your loved ones' lives, even after you have departed.</p>
                     </div>
                 </div>
                 <div id="images" className="col">
