@@ -4,7 +4,7 @@ class Price extends Component {
     state = {}
     render() {
         return (
-            <section id="price" className="price-section d-flex flex-column justify-content-center">
+            <section id="price" className="price-section d-flex flex-column justify-content-top">
                 <div className="container">
                     <h1 className="price-title">Planes y Precios</h1>
                     <h5 className="price-subtitle">Selecciona el mejor plan para ti.</h5>

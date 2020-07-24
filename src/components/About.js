@@ -4,7 +4,7 @@ import photo2 from '../assets/images/banff-canada-landscape-5k-8p 1.png';
 
 export default function About() {
     return (
-        <section id="about" className="about-section d-flex flex-column justify-content-center">
+        <section id="about" className="about-section d-flex flex-column justify-content-top">
             <div className="container d-flex">
                 <div id="text" className="col">
                     <h1 className="about-title">Acerca</h1>

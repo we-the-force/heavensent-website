@@ -24,9 +24,9 @@ class Download extends Component {
         var state = this.state;
         return (
             <section id="download" className="download-section d-flex flex-column justify-content-center">
-                {this.getsqr('600px','450px','35%','0%')}
+                {this.getsqr('600px','450px','35%','-15%')}
                 {this.getsqr('810.26px','607.7px','50%','50%')}
-                {this.getsqr('600px','450px','65%','100%')}
+                {this.getsqr('600px','450px','65%','115%')}
                 <div className="container d-flex flex-column justify-content-center align-items-center">
                     <h1 className="download-title">DESCARGA</h1>
                     <div className="images">

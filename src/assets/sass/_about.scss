@@ -1,7 +1,7 @@
 .about-section {
-  height: 100vh;
-  //padding: 5.85rem 12% 0px 12%;
-  padding: 0px 12% 0px 12%;
+  min-height: 100vh;
+  padding: 5.85rem 12% 0px 12%;
+  //padding: 0px 12% 0px 12%;
   .container {
     max-width: unset;
     #text {
