@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
+import translateEN from '../locales/en/translation.json'
+import translateES from '../locales/es/translation.json'
+
 export default class Navbar extends Component {
     constructor(props) {
         super(props);
@@ -24,6 +27,15 @@ export default class Navbar extends Component {
         }
     };
 
+    getTrans = (x, y) => {
+        if (x == 'en') {
+            return translateEN[y]
+        } else if (x == 'es') {
+            return translateES[y]
+        }
+        return ''
+    }
+
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
@@ -32,6 +44,7 @@ export default class Navbar extends Component {
     }
 
     render() {
+        const { children } = this.props;
         const { openMenu, visibilityClass } = this.state;
         return (
             <nav
@@ -47,7 +60,7 @@ export default class Navbar extends Component {
                                 element="home"
                             >
                                 <a className="nav-link" href="#home">
-                                    INICIO
+                                    {this.getTrans(this.props.lang, 'home')}
                                 </a>
                             </Scroll>
                         </li>
@@ -58,7 +71,8 @@ export default class Navbar extends Component {
                                 element="about"
                             >
                                 <a className="nav-link" href="#about">
-                                    ACERCA
+                                    {this.getTrans(this.props.lang, 'about')}
+                                    {/* ACERCA */}
                                 </a>
                             </Scroll>
                         </li>
@@ -69,8 +83,9 @@ export default class Navbar extends Component {
                                 element="features"
                             >
                                 <a className="nav-link" href="#features">
-                                    CARACTERISTICAS
-                            </a>
+                                    {this.getTrans(this.props.lang, 'features')}
+                                    {/* CARACTERISTICAS */}
+                                </a>
                             </Scroll>
                         </li>
                         <li className="nav-item">
@@ -80,8 +95,9 @@ export default class Navbar extends Component {
                                 element="reviews"
                             >
                                 <a className="nav-link" href="#reviews">
-                                    RESEÑAS
-                            </a>
+                                    {this.getTrans(this.props.lang, 'reviews')}
+                                    {/* RESEÑAS */}
+                                </a>
                             </Scroll>
                         </li>
                         <li className="nav-item">
@@ -91,8 +107,9 @@ export default class Navbar extends Component {
                                 element="download"
                             >
                                 <a className="nav-link" href="#download">
-                                    DESCARGAS
-                            </a>
+                                    {this.getTrans(this.props.lang, 'downloads')}
+                                    {/* DESCARGAS */}
+                                </a>
                             </Scroll>
                         </li>
                         <li className="nav-item">
@@ -102,16 +119,13 @@ export default class Navbar extends Component {
                                 element="price"
                             >
                                 <a className="nav-link" href="#price">
-                                    PRECIO
-                            </a>
+                                    {this.getTrans(this.props.lang, 'price')}
+                                    {/* PRECIO */}
+                                </a>
                             </Scroll>
                         </li>
                     </ul>
-                    <div id="lang-btn" className="position-absolute d-flex">
-                        <a data-lang="en" className="">EN</a>
-                        <p> / </p>
-                        <a data-lang="es" className="active">ES</a>
-                    </div>
+                    {children}
                 </div>
             </nav>
         );

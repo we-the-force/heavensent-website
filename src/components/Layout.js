@@ -28,7 +28,7 @@ class Layout extends Component {
                 { name: 'keywords', content: 'site, web' },
               ]}
             >
-              <html lang="en" />
+              <html lang={this.props.lang} />
             </Helmet>
             <div className={'page-top'}>{children}</div>
           </>
