@@ -4,5 +4,66 @@
     "features": "CARACTERISTICAS",
     "reviews": "RESEÑAS",
     "downloads": "DESCARGAS",
-    "price": "PRECIO"
+    "price": "PRECIO",
+    "home_desc": "crea, selecciona y envía tus memorias",
+    "about_p1": "Al momento de partir, nuestros seres queridos tienen la posibilidad de recordarnos mediante todos los momentos que compartimos juntos. Puede ser algo tan sencillo como un cumpleaños, un aniversario, unas vacaciones juntos, o algo más específico como un evento especial, un lugar o un momento. Queremos preservar en el tiempo todas estas memorias que alguna vez compartimos con ellos en nuestras almas y corazones.",
+    "about_p2": "Heaven Sent es una app con una muy sencilla e intuitiva plataforma que te permitirá capturar todos estos momentos; haciéndote posible subir todas las imágenes, videos, audios o mensajes que desees sobre esos momentos especiales.",
+    "about_p3": "Estas memorias serán guardadas y se compartirán con tus amigos o familia en el tiempo que tú lo decidas; una vez compartido, tus seres queridos podrán revisitar esta memoria cuantas veces lo deseen. Forma parte de tus seres queridos aún después de partir.",
+    "feature_items": [
+        {
+            "Title": "Carga de archivos",
+            "Desc": "Sube imágenes, videos, mensajes grabados y mensajes de texto pre-escritos."
+        },
+        {
+            "Title": "Almacenaje",
+            "Desc": "Guarda y revisita múltiples formatos audiovisuales por hasta 15 años."
+        },
+        {
+            "Title": "Distribución",
+            "Desc": "Distribuye mensajes hasta un máximo de 10 personas."
+        },
+        {
+            "Title": "Regalos monetarios y donaciones",
+            "Desc": "Manda regalos monetarios y dona a la caridad."
+        },
+        {
+            "Title": "Pagos",
+            "Desc": "Procesa en una sola vez tus pagos y suscripciones en caso que así lo desees."
+        },
+        {
+            "Title": "Contacto a través de notificaciones",
+            "Desc": "Contacta a tus seres queridos via notificaciones, textos, email o por teléfono de manera automática en intervalos de tiempo específicos."
+        },
+        {
+            "Title": "Mensajes en distintas plataformas",
+            "Desc": "Permite recibir mensajes via WhatsaApp, Facebook o textos."
+        },
+        {
+            "Title": "Idiomas",
+            "Desc": "Disponible en inglés y español."
+        }
+    ],
+    "reviews_items": [
+        {
+            "Title": "Mike, 50",
+            "Desc": "¡Gracias Heaven Sent! Realmente lo recomiendo mucho, es una plataforma muy fácil de usar y cada parte del proceso fue muy sencilla de lograr.",
+            "photo": "photo1"
+        },
+        {
+            "Title": "Susy, 58",
+            "Desc": "Nunca hubiera imaginado que una app así pudiera ser posible, es realmente sencilla de usar y he podido crear cientos de memorias para mis seres queridos.",
+            "photo": "photo2"
+        },
+        {
+            "Title": "Nora, 55",
+            "Desc": "Me encanta la plataforma de Heaven Sent, gracias a ella pude planear los siguientes 15 cumpleaños de mi esposo e hijo, pudiéndoles dejar un mensaje especial en caso de que ya no pueda celebrar con ellos.",
+            "photo": "photo3"
+        }
+    ],
+    "price_title": "PLANES Y PRECIOS",
+    "prcie_sub": "Selecciona el mejor plan para ti.",
+    "text_notes": "Notas de texto",
+    "pictures": "Imagenes",
+    "on_demand": "Bajo demanda",
+    "mem_pers_year": "Memorias / Personas / Años"
 }

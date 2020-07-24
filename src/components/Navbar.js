@@ -28,9 +28,9 @@ export default class Navbar extends Component {
     };
 
     getTrans = (x, y) => {
-        if (x == 'en') {
+        if (x === 'en') {
             return translateEN[y]
-        } else if (x == 'es') {
+        } else if (x === 'es') {
             return translateES[y]
         }
         return ''

@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
-import photo from '../assets/images/Group 12.png';
+import translateEN from '../locales/en/translation.json'
+import translateES from '../locales/es/translation.json'
 class Price extends Component {
-    state = {}
+    getTrans = (y) => {
+        let x = this.props.lang;
+        if (x === 'en') {
+            return translateEN[y]
+        } else if (x === 'es') {
+            return translateES[y]
+        }
+        return ''
+    }
     render() {
         return (
             <section id="price" className="price-section d-flex flex-column justify-content-top">
                 <div className="container">
-                    <h1 className="price-title">PRICING</h1>
-                    <h5 className="price-subtitle">Select the best plan for you.</h5>
+                    <h1 className="price-title">{this.getTrans('price_title')}</h1>
+                    <h5 className="price-subtitle">{this.getTrans('price_sub')}</h5>
                     <div className="row prices">
                         <div className="col-3"></div>
                         <div className="col-9 d-flex justify-content-around">
@@ -39,7 +48,7 @@ class Price extends Component {
                     </div>
                     <div className="row border-bottom">
                         <div className="col-3">
-                            <p>Text Notes</p>
+                            <p>{this.getTrans('text_notes')}</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
                             <i className="fa fa-check blue-1" aria-hidden="true"></i>
@@ -49,7 +58,7 @@ class Price extends Component {
                     </div>
                     <div className="row border-bottom">
                         <div className="col-3">
-                            <p>Pictures</p>
+                            <p>{this.getTrans('pictures')}</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
                             <i className="fa fa-check blue-1" aria-hidden="true"></i>
@@ -79,7 +88,7 @@ class Price extends Component {
                     </div>
                     <div className="row border-bottom">
                         <div className="col-3">
-                            <p>On Demand</p>
+                            <p>{this.getTrans('on_demand')}</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
                             <i className="fa fa-times blue-1" aria-hidden="true"></i>
@@ -91,9 +100,9 @@ class Price extends Component {
                         <div className="col-3">
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
-                            <p className="desc">6 Memories / Person / Years</p>
-                            <p className="desc">6 Memories / Person / Years</p>
-                            <p className="desc">12 Memories / Person / Years</p>
+                            <p className="desc">6 {this.getTrans('mem_pers_year')}</p>
+                            <p className="desc">6 {this.getTrans('mem_pers_year')}</p>
+                            <p className="desc">12 {this.getTrans('mem_pers_year')}</p>
                         </div>
                     </div>
                 </div>

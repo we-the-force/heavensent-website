@@ -46,7 +46,7 @@
     background: rgba(92, 92, 92, 0.3);
     border-radius: 2px;
     padding: 0px 6px;
-    a,
+    border: none;
     p {
       font-family: Roboto;
       font-style: normal;
@@ -60,6 +60,9 @@
       &.active {
         color: $white;
       }
+    }
+    &:focus{
+      outline: none;
     }
   }
   @media (min-width: 992px) {

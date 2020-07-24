@@ -4,5 +4,55 @@
     "features": "FEATURES",
     "reviews": "REVIEWS",
     "downloads": "DOWNLOADS",
-    "price": "PRICE"
+    "price": "PRICE",
+    "home_desc": "CREATE, CHOOSE AND SEND YOUR MEMORIES",
+    "about_p1": "When we leave this world, our friends and family members will always remember us by the memories we created together. It may be something as simple as a birthday, anniversary, or holiday shared or something as specific as a special event, place, or even moment. We want to preserve these memories in time that were shared in our hearts and souls.",
+    "about_p2": "HeavenSent is an app with a very simple and intuitive platform that enables us to capture these memories. It makes it possible to upload images, videos, audio, and messages of all those special moments that you experienced together. These memories are saved and then shared with your friends and family on specific dates that you establish. After the memory has been shared, your family member or friend will be able to revisit it anytime they desire.",
+    "about_p3": "The app provides you with the capability to still be part of your loved ones' lives, even after you have departed.",
+    "feature_items": [
+        {
+            "Title": "Upload",
+            "Desc": "Upload images, videos, recorded messages and pre-written text messages."
+        }, {
+            "Title": "Store and retrieve",
+            "Desc": "Save and revisit multiple audiovisual formats for up to 15 years."
+        }, {
+            "Title": "Distribute messages",
+            "Desc": "Distribute messages to a maximum of 10 people."
+        }, {
+            "Title": "Send monetary gifts",
+            "Desc": "Send monetary gifts and donate to charity."
+        }, {
+            "Title": "Process one time",
+            "Desc": "Process your payments and subscriptions in one go if you wish."
+        }, {
+            "Title": "Contact clients",
+            "Desc": "Contact your loved ones via notifications, texts, emails or by phone automatically at specific time intervals."
+        }, {
+            "Title": "Allow the customer",
+            "Desc": "Allows you to receive messages via WhatsaApp, Facebook or texts."
+        }, {
+            "Title": "Available in",
+            "Desc": "Available in English and Spanish."
+        }
+    ],
+    "reviews_items": [{
+        "Title": "Mike, 50",
+        "Desc": "Thanks HeavenSent, I really recommend it, it’s such an easy platform, every part of the process was really simple to accomplish.",
+        "photo": "photo1"
+    }, {
+        "Title": "Susy, 58",
+        "Desc": "I wouldn’t imagine this type of app would be possible, it’s really easy to use and it has allowed me to create hundreds of memories for my loved ones!",
+        "photo": "photo2"
+    }, {
+        "Title": "Nora, 55",
+        "Desc": "I loved HeavenSent’s platform, it allowed me to plan my son’s and husband’s next 15 birthdays so I can send them a special message even if I’m not here.",
+        "photo": "photo3"
+    }],
+    "price_title": "PRICING",
+    "prcie_sub": "Select the best plan for you.",
+    "text_notes": "Text Notes",
+    "pictures": "Pictures",
+    "on_demand": "On Demand",
+    "mem_pers_year": "Memories / Person / Years"
 }

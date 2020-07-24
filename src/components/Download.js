@@ -3,7 +3,19 @@ import photo from '../assets/images/Group 12.png';
 import app_store from '../assets/images/apple.png';
 import google_play from '../assets/images/google.png';
 
+import translateEN from '../locales/en/translation.json'
+import translateES from '../locales/es/translation.json'
+
 class Download extends Component {
+    getTrans = (y) => {
+        let x = this.props.lang;
+        if (x === 'en') {
+            return translateEN[y]
+        } else if (x === 'es') {
+            return translateES[y]
+        }
+        return ''
+    }
     getsqr = (x,y,t,l) => {
         const style = {
             width: x,
@@ -20,22 +32,21 @@ class Download extends Component {
     }
     state = {}
     render() {
-        var state = this.state;
         return (
             <section id="download" className="download-section d-flex flex-column justify-content-center">
                 {this.getsqr('600px','450px','35%','-15%')}
                 {this.getsqr('810.26px','607.7px','50%','50%')}
                 {this.getsqr('600px','450px','65%','115%')}
                 <div className="container d-flex flex-column justify-content-center align-items-center">
-                    <h1 className="download-title">DOWNLOAD</h1>
+                    <h1 className="download-title">{this.getTrans('downloads')}</h1>
                     <div className="images">
                         <img src={photo} alt=""/>
                     </div>
                     <div className="stores">
-                        <a className="app_store">
+                        <a href="#download" className="app_store">
                             <img src={app_store} alt=""/>
                         </a>
-                        <a className="google_play">
+                        <a href="#download" className="google_play">
                             <img src={google_play} alt=""/>
                         </a>
                     </div>
