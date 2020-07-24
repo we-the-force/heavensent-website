@@ -15,7 +15,6 @@ class Download extends Component {
             position: "absolute",
             top: t,
             left: l,
-
         }
         return (<div style={style}></div>)
     }
@@ -28,7 +27,7 @@ class Download extends Component {
                 {this.getsqr('810.26px','607.7px','50%','50%')}
                 {this.getsqr('600px','450px','65%','115%')}
                 <div className="container d-flex flex-column justify-content-center align-items-center">
-                    <h1 className="download-title">DESCARGA</h1>
+                    <h1 className="download-title">DOWNLOAD</h1>
                     <div className="images">
                         <img src={photo} alt=""/>
                     </div>

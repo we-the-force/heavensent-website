@@ -47,7 +47,7 @@ class Features extends Component {
                         </div>
                     </div>
                     <div className="col pr-0 carousel_cont">
-                        <h1 className="features-title">CARACTERISTICAS</h1>
+                        <h1 className="features-title">FEATURES</h1>
                         <Carousel interval={null}>
                             {items.map((item,i) => {
                                 return (<Carousel.Item key={i}>

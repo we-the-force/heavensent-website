@@ -6,8 +6,8 @@ class Price extends Component {
         return (
             <section id="price" className="price-section d-flex flex-column justify-content-top">
                 <div className="container">
-                    <h1 className="price-title">Planes y Precios</h1>
-                    <h5 className="price-subtitle">Selecciona el mejor plan para ti.</h5>
+                    <h1 className="price-title">PRICING</h1>
+                    <h5 className="price-subtitle">Select the best plan for you.</h5>
                     <div className="row prices">
                         <div className="col-3"></div>
                         <div className="col-9 d-flex justify-content-around">
@@ -39,7 +39,7 @@ class Price extends Component {
                     </div>
                     <div className="row border-bottom">
                         <div className="col-3">
-                            <p>Notas de texto</p>
+                            <p>Text Notes</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
                             <i className="fa fa-check blue-1" aria-hidden="true"></i>
@@ -49,7 +49,7 @@ class Price extends Component {
                     </div>
                     <div className="row border-bottom">
                         <div className="col-3">
-                            <p>Imagenes</p>
+                            <p>Pictures</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
                             <i className="fa fa-check blue-1" aria-hidden="true"></i>
@@ -79,7 +79,7 @@ class Price extends Component {
                     </div>
                     <div className="row border-bottom">
                         <div className="col-3">
-                            <p>Bajo demanda</p>
+                            <p>On Demand</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
                             <i className="fa fa-times blue-1" aria-hidden="true"></i>
@@ -91,9 +91,9 @@ class Price extends Component {
                         <div className="col-3">
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
-                            <p className="desc">6 Memorias / Personas / Años</p>
-                            <p className="desc">6 Memorias / Personas / Años</p>
-                            <p className="desc">12 Memorias / Personas / Años</p>
+                            <p className="desc">6 Memories / Person / Years</p>
+                            <p className="desc">6 Memories / Person / Years</p>
+                            <p className="desc">12 Memories / Person / Years</p>
                         </div>
                     </div>
                 </div>
