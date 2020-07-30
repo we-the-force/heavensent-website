@@ -1,16 +1,30 @@
 .features-section {
   height: 100vh;
   padding-top: 5.85rem;
+  box-sizing: content-box;
+  .container {
+    flex-direction: column;
+    .carousel_cont{
+      padding: 30px 0px 0px 0px;
+    }
+    .img_cont {
+      padding: 0px 0px 30px 0px;
+    }
+  }
+  .img_cont img {
+    height: 100%;
+    object-fit: cover;
+  }
   .features-title {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 26px;
     line-height: 42px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #707070;
-    padding: 0px 17%;
+    padding: 0px 8%;
     margin-bottom: 20px;
   }
   .carousel_cont {
@@ -20,27 +34,29 @@
   }
   .carousel {
     flex-grow: 1;
-    padding: 0px 17%;
+    padding: 0px 8%;
     display: flex;
     flex-direction: column;
     .carousel-indicators {
       order: 2;
       position: relative;
-      margin: 0px 59px 16px 59px;
+      margin: 0px 50px 16px 50px;
       height: 50px;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       padding: 0px 22px;
       li {
-        height: 24px;
-        width: 24px;
+        height: 14px;
+        width: 14px;
         border-radius: 50%;
         background: #d6d6d6;
-        box-sizing: border-box;
+        box-sizing: content-box;
         opacity: 1;
+        min-width: 14px;
+        border: none;
         &.active {
-          background: #76BDE5;
+          background: #76bde5;
         }
       }
     }
@@ -58,9 +74,11 @@
           line-height: 28px;
           text-transform: uppercase;
           color: #454545;
-          margin-bottom: 56px;
+          margin-bottom: 30px;
+          min-height: 56px;
         }
         .feat_desc {
+          min-height: 110px;
           text-align: left;
           font-family: Roboto;
           font-style: normal;
@@ -74,18 +92,20 @@
     .carousel-control-prev {
       bottom: 0;
       top: unset;
-      margin-left: calc(17% + 9px);
+      margin-left: 8%;
       margin-bottom: 16px;
       width: 50px;
       height: 50px;
-      background:#f9f9f9;
+      background: #f9f9f9;
       border-radius: 50%;
-      box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12), -2px -2px 4px rgba(255, 255, 255, 0.9), inset 0px 2px 0px #fdfdfd, inset 0px -2px 0px #f0f0f0;
+      box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12),
+        -2px -2px 4px rgba(255, 255, 255, 0.9), inset 0px 2px 0px #fdfdfd,
+        inset 0px -2px 0px #f0f0f0;
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 0.5px solid #F5F5F5;
-      
+      border: 0.5px solid #f5f5f5;
+
       i {
         font-size: 20px;
         color: #999999;
@@ -94,21 +114,71 @@
     .carousel-control-next {
       bottom: 0;
       top: unset;
-      margin-right: calc(17% + 9px);
+      margin-right: 8%;
       margin-bottom: 16px;
       width: 50px;
       height: 50px;
-      background:#f9f9f9;
+      background: #f9f9f9;
       border-radius: 50%;
-      box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12), -2px -2px 4px rgba(255, 255, 255, 0.9), inset 0px 2px 0px #fdfdfd, inset 0px -2px 0px #f0f0f0;
+      box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12),
+        -2px -2px 4px rgba(255, 255, 255, 0.9), inset 0px 2px 0px #fdfdfd,
+        inset 0px -2px 0px #f0f0f0;
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 0.5px solid #F5F5F5;
-      
+      border: 0.5px solid #f5f5f5;
+
       i {
         font-size: 20px;
         color: #999999;
+      }
+    }
+  }
+  @media (min-width: 360px) {
+    .features-title {
+      font-size: 30px;
+    }
+  }
+  @media (min-width: 568px) {
+    .features-title {
+      font-size: 36px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      flex-direction: row;
+      .carousel_cont{
+        padding: 15px 0px;
+      }
+      .img_cont {
+        padding: 0px;
+      }
+      .features-title {
+        padding: 0px 10%;
+      }
+      .carousel {
+        padding: 0px 10%;
+        .carousel-inner {
+          .carousel-item {
+            .feat_desc {
+              min-height: 80px;
+            }
+          }
+        }
+        .carousel-indicators {
+          margin: 0px 59px 16px 59px;
+          li {
+            height: 18px;
+            width: 18px;
+            min-width: 18px;
+          }
+        }
+        .carousel-control-prev {
+          margin-left: calc(10% + 5px);
+        }
+        .carousel-control-next {
+          margin-right: calc(10% + 5px);
+        }
       }
     }
   }

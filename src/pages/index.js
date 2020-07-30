@@ -57,9 +57,9 @@ export default class IndexPage extends Component {
                     </div>
                 </header>
                 <About lang={this.state.lang} />
-                {/*<Features lang={this.state.lang} />
+                <Features lang={this.state.lang} />
                 <Reviews lang={this.state.lang} />
-                <Download lang={this.state.lang} />
+                {/*<Download lang={this.state.lang} />
                 <Price lang={this.state.lang} /> */}
                 <section id="logo_foot" className="logo-foot-section d-flex align-items-center justify-content-center">
                     <div className="logo_foot">
