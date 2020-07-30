@@ -21,10 +21,11 @@ export default class IndexPage extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { lang:  'en'};
+        this.state = { lang: 'en' };
     }
 
-    getTrans = (y) => {;
+    getTrans = (y) => {
+        ;
         let x = this.state.lang;
         if (x === 'en') {
             return translateEN[y]
@@ -37,21 +38,15 @@ export default class IndexPage extends Component {
     handleLang = () => {
         let x = this.state.lang;
         if (x === 'en') {
-            this.setState({lang: "es"});
+            this.setState({ lang: "es" });
         } else if (x === 'es') {
-            this.setState({lang: "en"});
+            this.setState({ lang: "en" });
         }
     };
     render() {
         return (
             <Layout lang={this.state.lang}>
-                <Navbar lang={this.state.lang}>
-                    <button id="lang-btn" className="position-absolute d-flex" onClick={() => this.handleLang()} style={{ cursor: "pointer" }} tabIndex={0} onKeyPress={this.handleKeyPress}>
-                        <p data-lang="en" className={this.state.lang === 'en' ? 'active' : null} >EN</p>
-                        <p> / </p>
-                        <p data-lang="es" className={this.state.lang === 'es' ? 'active' : null}>ES</p>
-                    </button>
-                </Navbar>
+                <Navbar lang={this.state.lang}/>
                 <header className="masthead d-flex flex-column justify-content-center align-items-center" id="home">
                     <div className="app-screen">
                         <img src={appScreen} alt="" />
@@ -61,17 +56,23 @@ export default class IndexPage extends Component {
                         <img src={arrowDown} alt="" />
                     </div>
                 </header>
-                <About lang={this.state.lang}/>
-                <Features lang={this.state.lang}/>
-                <Reviews lang={this.state.lang}/>
-                <Download lang={this.state.lang}/>
-                <Price lang={this.state.lang}/>
+                <About lang={this.state.lang} />
+                {/*<Features lang={this.state.lang} />
+                <Reviews lang={this.state.lang} />
+                <Download lang={this.state.lang} />
+                <Price lang={this.state.lang} /> */}
                 <section id="logo_foot" className="logo-foot-section d-flex align-items-center justify-content-center">
                     <div className="logo_foot">
                         <img src={logo} alt="" />
                     </div>
                 </section>
-                <Footer />
+                <Footer lang={this.state.lang}>
+                    <button id="lang-btn" className="position-absolute d-flex" onClick={() => this.handleLang()} style={{ cursor: "pointer" }} tabIndex={0} onKeyPress={this.handleKeyPress}>
+                        <p data-lang="en" className={this.state.lang === 'en' ? 'active' : null} >EN</p>
+                        <p> / </p>
+                        <p data-lang="es" className={this.state.lang === 'es' ? 'active' : null}>ES</p>
+                    </button>
+                </Footer>
             </Layout>
         )
 

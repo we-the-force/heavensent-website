@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
+import logo from '../assets/images/feather.png';
 import translateEN from '../locales/en/translation.json'
 import translateES from '../locales/es/translation.json'
 
@@ -9,6 +10,7 @@ export default class Navbar extends Component {
         this.state = {
             openMenu: false,
             visibilityClass: '',
+            dropdownClass: '',
         };
     }
     toggleMenu = value => {
@@ -24,6 +26,14 @@ export default class Navbar extends Component {
             if (visibilityClass === 'navbar-shrink') {
                 this.setState({ visibilityClass: '' });
             }
+        }
+    };
+    handleHamburger = () => {
+        const { dropdownClass } = this.state;
+        if (dropdownClass !== 'show') {
+            this.setState({ dropdownClass: 'show' });
+        } else if (dropdownClass === 'show') {
+            this.setState({ dropdownClass: '' });
         }
     };
 
@@ -44,13 +54,85 @@ export default class Navbar extends Component {
     }
 
     render() {
-        const { children } = this.props;
-        const { openMenu, visibilityClass } = this.state;
+        const { openMenu, visibilityClass, dropdownClass } = this.state;
         return (
             <nav
-                className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
+                className={`navbar navbar-expand-lg navbar-light fixed-top ${dropdownClass} ${visibilityClass}`}
                 id="mainNav"
             >
+                <a className="logo_nav">
+                    <img src={logo} alt="" />
+                </a>
+                <div className={` links nav_mob ${dropdownClass} `}>
+                    <Scroll
+                        onClick={() => this.handleHamburger()}
+                        type="id"
+                        element="home"
+                    >
+                        <a className="nav-link" href="#home">
+                            {this.getTrans(this.props.lang, 'home')}
+                        </a>
+                    </Scroll>
+                    <Scroll
+                        onClick={() => this.handleHamburger()}
+                        type="id"
+                        element="about"
+                    >
+                        <a className="nav-link" href="#about">
+                            {this.getTrans(this.props.lang, 'about')}
+                            {/* ACERCA */}
+                        </a>
+                    </Scroll>
+                    <Scroll
+                        onClick={() => this.handleHamburger()}
+                        type="id"
+                        element="features"
+                    >
+                        <a className="nav-link" href="#features">
+                            {this.getTrans(this.props.lang, 'features')}
+                            {/* CARACTERISTICAS */}
+                        </a>
+                    </Scroll>
+                    <Scroll
+                        onClick={() => this.handleHamburger()}
+                        type="id"
+                        element="reviews"
+                    >
+                        <a className="nav-link" href="#reviews">
+                            {this.getTrans(this.props.lang, 'reviews')}
+                            {/* RESEÑAS */}
+                        </a>
+                    </Scroll>
+                    <Scroll
+                        onClick={() => this.handleHamburger()}
+                        type="id"
+                        element="download"
+                    >
+                        <a className="nav-link" href="#download">
+                            {this.getTrans(this.props.lang, 'downloads')}
+                            {/* DESCARGAS */}
+                        </a>
+                    </Scroll>
+                    <Scroll
+                        onClick={() => this.handleHamburger()}
+                        type="id"
+                        element="price"
+                    >
+                        <a className="nav-link" href="#price">
+                            {this.getTrans(this.props.lang, 'price')}
+                            {/* PRECIO */}
+                        </a>
+                    </Scroll>
+
+                    <a className="nav-link" href="https://app.heavensentnow.com">
+                        {this.getTrans(this.props.lang, 'signup')}
+                    </a>
+                </div>
+
+                <a className="icon hamburger" onClick={() => this.handleHamburger()}>
+                    <i className="fa fa-bars"></i>
+                </a>
+
                 <div className="container justify-content-center">
                     <ul className="navbar-nav">
                         <li className="nav-item">
@@ -124,8 +206,12 @@ export default class Navbar extends Component {
                                 </a>
                             </Scroll>
                         </li>
+                        <li>
+                            <a className="nav-link" href="https://app.heavensentnow.com">
+                                {this.getTrans(this.props.lang, 'signup')}
+                            </a>
+                        </li>
                     </ul>
-                    {children}
                 </div>
             </nav>
         );
