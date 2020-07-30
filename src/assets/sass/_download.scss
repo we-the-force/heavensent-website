@@ -1,19 +1,21 @@
 .download-section {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   position: relative;
   overflow: hidden;
   padding-top: 5.85rem;
-  box-sizing: content-box;
+  box-sizing: border-box;
   p {
     margin-bottom: 5rem;
   }
   .container {
     z-index: 1;
+    padding: 0px 8%;
     .download-title {
       font-family: Roboto;
       font-style: normal;
       font-weight: normal;
-      font-size: 36px;
+      font-size: 26px;
       line-height: 42px;
       text-align: center;
       letter-spacing: 0.1em;
@@ -21,18 +23,79 @@
       color: #707070;
       margin-bottom: 21.5px;
     }
-    .images img {
-      margin: 21.5px 0px;
-      transform: translateX(63.5px);
+    .images {
+      width: 100%;
+      img {
+        width: 100%;
+        margin: 21.5px 0px;
+        transform: translateX(11.5%);
+      }
     }
     .stores {
       margin-top: 21.5px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
       .app_store {
         margin-right: 44px;
+        margin: 0px;
+        width: 45%;
+        img {
+          width: 100%;
+        }
       }
       .google_play {
         margin-left: 44px;
+        margin: 0px;
+        width: 45%;
+        img {
+          width: 100%;
+        }
       }
+    }
+  }
+  @media (min-width: 360px) {
+    .container {
+      .download-title {
+        font-size: 30px;
+      }
+    }
+  }
+  @media (min-width: 568px) {
+    .container {
+      .download-title {
+        font-size: 36px;
+      }
+      .stores {
+        display: block;
+        width: unset;
+        margin-top: 21.5px;
+        .app_store {
+          margin-right: 44px;
+          width: unset;
+          img{
+            width: unset;
+          }
+        }
+        .google_play {
+          margin-left: 44px;
+          width: unset;
+          img{
+            width: unset;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      .images{
+        width: auto;
+        img {
+          width: auto;
+        }
+      }
+      
     }
   }
 }
