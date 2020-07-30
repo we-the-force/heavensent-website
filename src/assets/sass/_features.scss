@@ -1,7 +1,9 @@
 .features-section {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   padding-top: 5.85rem;
   box-sizing: content-box;
+  justify-content: flex-start;
   .container {
     flex-direction: column;
     .carousel_cont{
@@ -145,6 +147,8 @@
     }
   }
   @media (min-width: 992px) {
+    justify-content: center;
+    box-sizing: border-box;
     .container {
       flex-direction: row;
       .carousel_cont{

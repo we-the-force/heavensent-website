@@ -36,7 +36,7 @@ class Reviews extends Component {
 
     render() {
         return (
-            <section id="reviews" className="reviews-section d-flex flex-column justify-content-center">
+            <section id="reviews" className="reviews-section d-flex flex-column">
                 <div className="container">
                     <Carousel interval={null} controls={false}>
                         <Carousel.Item>

@@ -23,7 +23,7 @@ class Features extends Component {
     }
     render() {
         return (
-            <section id="features" className="features-section d-flex flex-column justify-content-top">
+            <section id="features" className="features-section d-flex flex-column">
                 <div className="container d-flex mx-0 px-0 mw-100">
                     <div className="col pl-0 img_cont">
                             <img src={photo} className="w-100" alt=""></img>

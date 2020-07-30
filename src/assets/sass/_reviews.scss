@@ -1,12 +1,15 @@
 .reviews-section {
-  height: 100vh;
-  padding-top: 5.85rem;
+  min-height: 100vh;
+  height: auto;
+  //padding-top: 5.85rem;
+  box-sizing: content-box;
+  justify-content: center;
   p {
     margin-bottom: 5rem;
   }
   .carousel {
     .carousel-inner {
-      padding: 0px 10%;
+      padding: 0px;
       .card {
         background: #ffffff;
         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
@@ -14,12 +17,12 @@
         border: none;
         padding: 14px;
         hr {
-          height: 100%;
+          height: auto;
           width: 1px;
           background: #f0f0f0;
         }
         .left-side {
-          padding: 0px 23px;
+          padding: 0px 14px 0px 0px;
           p {
             font-family: Roboto;
             font-style: normal;
@@ -28,18 +31,8 @@
             line-height: 96px;
             text-transform: capitalize;
             color: #76bde5;
-            margin: 0px;
+            margin: 0px 0px 96px 0px;
           }
-        }
-        .card-title {
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 24px;
-          line-height: 15px;
-          text-transform: capitalize;
-          color: #454545;
-          margin-bottom: 18px;
         }
         .card-text {
           font-family: Roboto;
@@ -53,14 +46,38 @@
     }
     .carousel-indicators {
       margin-bottom: 24px;
+      margin-left: 5%;
+      margin-right: 5%;
       position: relative;
       li {
         margin: 0px 14px;
+        min-width: 60px;
+        border: none;
         height: 60px;
         width: 60px;
         border-radius: 50%;
         background-repeat: no-repeat;
         background-size: 100%;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    box-sizing: border-box;
+    .carousel{
+      .carousel-indicators {
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+    }
+    .carousel-inner {
+      padding: 0px 10%;
+      .card {
+        .left-side {
+          padding: 0px 23px;
+          p {
+            margin: 0px !important;
+          }
+        }
       }
     }
   }
