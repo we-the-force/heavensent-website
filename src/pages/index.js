@@ -67,7 +67,7 @@ export default class IndexPage extends Component {
                     </div>
                 </section>
                 <Footer lang={this.state.lang}>
-                    <button id="lang-btn" className="position-absolute d-flex" onClick={() => this.handleLang()} style={{ cursor: "pointer" }} tabIndex={0} onKeyPress={this.handleKeyPress}>
+                    <button id="lang-btn" className="d-flex" onClick={() => this.handleLang()} style={{ cursor: "pointer" }} tabIndex={0} onKeyPress={this.handleKeyPress}>
                         <p data-lang="en" className={this.state.lang === 'en' ? 'active' : null} >EN</p>
                         <p> / </p>
                         <p data-lang="es" className={this.state.lang === 'es' ? 'active' : null}>ES</p>

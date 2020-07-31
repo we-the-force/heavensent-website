@@ -1,6 +1,9 @@
 .price-section {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   padding-top: 5.85rem;
+  box-sizing: content-box;
+  justify-content: flex-start;
   p {
     margin-bottom: 5rem;
   }
@@ -9,7 +12,7 @@
       font-family: Roboto;
       font-style: normal;
       font-weight: normal;
-      font-size: 36px;
+      font-size: 26px;
       line-height: 36px;
       text-align: center;
       letter-spacing: 0.1em;
@@ -28,15 +31,17 @@
       margin-bottom: 76px;
     }
     .plan {
+      max-width: 28vw;
+      max-height: 28vw;
       width: 150px;
-      height: 150px;
+      height: auto;
       padding: 8px;
       h3 {
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
-        font-size: 22px;
-        line-height: 24px;
+        font-size: 16px;
+        line-height: 18px;
         text-align: center;
         color: #ffffff;
       }
@@ -46,21 +51,21 @@
           font-family: Roboto;
           font-style: normal;
           font-weight: 500;
-          font-size: 41px;
-          line-height: 42px;
+          font-size: 35px;
+          line-height: 35px;
           text-align: center;
           color: #f9f9f9;
         }
         .small {
-          font-size: 15px;
+          font-size: 9px;
         }
       }
       p {
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 10px;
+        line-height: 18px;
         text-align: center;
         color: #ffffff;
         margin: 0px;
@@ -85,7 +90,10 @@
       &.border-bottom {
         border-bottom: 1px solid #d2d2d2 !important;
         .col-3 {
-          padding-left: 77px;
+          flex-basis: 100%;
+          max-width: 100%;
+          padding: 0px;
+          text-align: center;
           p {
             font-family: Roboto;
             font-style: normal;
@@ -97,6 +105,9 @@
           }
         }
         .col-9 {
+          flex-basis: 100%;
+          max-width: 100%;
+          padding-bottom: 5px;
           i {
             font-size: 30px;
             &.blue-1 {
@@ -118,7 +129,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 12px;
             line-height: 19px;
             text-align: center;
             color: #707070;
@@ -129,6 +140,104 @@
       }
       &.prices {
         margin-bottom: 10px;
+        .col-3 {
+          display: none;
+        }
+        .col-9 {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    justify-content: center;
+    box-sizing: border-box;
+    .row {
+      &.border-bottom {
+        .col-3 {
+          padding-left: 77px !important;
+          flex-basis: 25% !important;
+          max-width: 25% !important;
+          text-align: left !important;
+        }
+        .col-9 {
+          flex-basis: 75% !important;
+          max-width: 75% !important;
+          padding-bottom: 0px !important;
+          p {
+            font-size: 16px !important;
+          }
+        }
+      }
+      &.prices {
+        .col-3 {
+          display: block !important;
+        }
+        .col-9 {
+          max-width: 75% !important;
+          flex-basis: 75% !important;
+        }
+      }
+    }
+    .plan {
+      h3 {
+        font-size: 22px;
+        line-height: 24px;
+      }
+      .price {
+        p {
+          font-size: 41px;
+          line-height: 42px;
+        }
+        .small {
+          font-size: 15px;
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  @media (min-width: 360px) {
+    .container {
+      .price-title {
+        font-size: 30px;
+      }
+    }
+  }
+  @media (min-width: 410px) {
+    .container {
+      .plan {
+        height: 115px !important;
+      }
+    }
+  }
+  @media (min-width: 568px) {
+    .container {
+      .price-title {
+        font-size: 36px;
+      }
+      .plan {
+        height: 150px !important;
+        h3 {
+          font-size: 22px;
+          line-height: 24px;
+        }
+        .price {
+          p {
+            font-size: 41px;
+            line-height: 42px;
+          }
+          .small {
+            font-size: 15px;
+          }
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
     }
   }

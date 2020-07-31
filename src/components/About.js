@@ -7,7 +7,7 @@ import translateES from '../locales/es/translation.json'
 
 
 export default class About extends Component {
-    getTrans = (y) => {;
+    getTrans = (y) => {
         let x = this.props.lang;
         if (x === 'en') {
             return translateEN[y]

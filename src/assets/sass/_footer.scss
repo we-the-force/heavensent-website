@@ -1,27 +1,56 @@
 footer {
-    background-color: #EFEFEF;
-    color: #9A9A9B;
-    padding: 96px 0px 20px 0px !important;
-    .container {
-        p {
-            margin: 0px;
-        }
-        .social {
-            margin-bottom: 58px;
-            .face_cont{
-                background: #76BDE5;
-                width: 53px;
-                height: 53px;
-                border-radius: 50%;
-                margin-right: 30px;
-            }
-            .insta_cont{
-                background: #76BDE5;
-                width: 53px;
-                height: 53px;
-                border-radius: 50%;
-                margin-left: 30px;
-            }
-        }
+  background-color: #efefef;
+  color: #9a9a9b;
+  padding: 96px 0px 20px 0px !important;
+  .container {
+    p {
+      margin: 0px;
     }
+    .social {
+      margin-bottom: 58px;
+      .face_cont {
+        background: #76bde5;
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+        margin-right: 30px;
+      }
+      .insta_cont {
+        background: #76bde5;
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+        margin-left: 30px;
+      }
+    }
+    .lang {
+      p {
+        margin-right: 5px;
+      }
+      #lang-btn {
+        margin-left: 5px;
+        background: rgba(92, 92, 92, 0.3);
+        border-radius: 2px;
+        padding: 0px 6px;
+        border: none;
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #d2d2d2;
+          margin: 2px;
+          &.active {
+            color: $white;
+          }
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
 }
