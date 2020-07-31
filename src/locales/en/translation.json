@@ -12,28 +12,28 @@
     "about_p3": "The app provides you with the capability to still be part of your loved ones' lives, even after you have departed.",
     "feature_items": [
         {
-            "Title": "Upload",
+            "Title": "Upload media",
             "Desc": "Upload pictures, videos, recorded messages, and pre-written text messages."
         }, {
             "Title": "Store and retrieve",
             "Desc": "Store and retrieve multiple media types for up to 15 years."
         }, {
-            "Title": "Distribute messages",
+            "Title": "Distribute",
             "Desc": "Distribute messages to up to 10 people."
         }, {
-            "Title": "Send monetary gifts",
+            "Title": "Monetary gifts and charity",
             "Desc": "Send monetary gifts and provide charitable giving."
         }, {
-            "Title": "Process one time",
+            "Title": "Payments",
             "Desc": "Process one time only payments and subscription payments if desired."
         }, {
-            "Title": "Contact clients",
+            "Title": "Contact via notifications",
             "Desc": "Contact designated friends and family members via notifications, text, email, or phone automatically at specific time intervals you create."
         }, {
-            "Title": "Allow the customer",
+            "Title": "Pull messages",
             "Desc": "Allow the customer to pull messages via WhatsApp, Facebook, or text."
         }, {
-            "Title": "Available in",
+            "Title": "Languages",
             "Desc": "Available in English and Spanish."
         }
     ],
