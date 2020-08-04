@@ -2,18 +2,10 @@ import React, { Component } from 'react';
 import face from '../assets/images/face.png';
 import insta from '../assets/images/insta.png';
 
-import translateEN from '../locales/en/translation.json'
-import translateES from '../locales/es/translation.json'
-
 export default class Footer extends Component {
   getTrans = (y) => {
-    let x = this.props.lang;
-    if (x === 'en') {
-      return translateEN[y]
-    } else if (x === 'es') {
-      return translateES[y]
-    }
-    return ''
+    let trans = this.props.translate[this.props.lang.toUpperCase()];
+    return trans ? trans[y] : '';
   }
   render() {
     const { children } = this.props;
@@ -29,8 +21,8 @@ export default class Footer extends Component {
             </div>
           </div>
           <div className="lang d-flex align-items-center">
-            <p>{this.getTrans('language:')}</p>
-            {children}
+            {/* <p>{this.getTrans('language')}</p>
+            {children} */}
           </div>
           <p>Copyright &copy; HevenSent 2020</p>
         </div>

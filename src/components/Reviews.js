@@ -4,9 +4,6 @@ import Card from 'react-bootstrap/Card'
 import photo1 from '../assets/images/Jason_Momoa_by_Gage_Skidmore_2.png';
 import photo2 from '../assets/images/136128.png';
 import photo3 from '../assets/images/b0a8a9917aae7debe429ac71bb480c66.png';
-
-import translateEN from '../locales/en/translation.json'
-import translateES from '../locales/es/translation.json'
 class Reviews extends Component {
 
     constructor(props) {
@@ -19,17 +16,12 @@ class Reviews extends Component {
     }
 
     getTrans = (y) => {
-        let x = this.props.lang;
-        if (x === 'en') {
-            return translateEN[y]
-        } else if (x === 'es') {
-            return translateES[y]
-        }
-        return ''
+        let trans = this.props.translate[this.props.lang.toUpperCase()];
+        return trans ? trans[y] : '';
     }
 
-    componentDidMount() {
-        this.getTrans("reviews_items").forEach((item, i) => {
+    componentDidUpdate() {
+        this.getTrans("review_items").forEach((item, i) => {
             document.querySelectorAll("#reviews .carousel-indicators")[0].children[i].style.backgroundImage = "url(" + this.state[item.photo] + ")";
         })
     }
@@ -39,7 +31,23 @@ class Reviews extends Component {
             <section id="reviews" className="reviews-section d-flex flex-column">
                 <div className="container">
                     <Carousel interval={null} controls={false}>
-                        <Carousel.Item>
+                        {this.getTrans('lang') !== '' &&
+                            this.props.translate[this.props.lang.toUpperCase()]['review_items'].map((el, key) =>
+                                <Carousel.Item key={key}>
+                                    <Card className="d-flex flex-row">
+                                        <div className="left-side d-flex justify-content-center align-items-end"> <p>“</p> </div>
+                                        <hr />
+                                        <Card.Body>
+                                            <Card.Title>- {el.Title}</Card.Title>
+                                            <Card.Text>
+                                                {el.Desc}
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Carousel.Item>
+                            )
+                        }
+                        {/* <Carousel.Item>
                             <Card className="d-flex flex-row">
                                 <div className="left-side d-flex justify-content-center align-items-end"> <p>“</p> </div>
                                 <hr />
@@ -74,7 +82,7 @@ class Reviews extends Component {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-                        </Carousel.Item>
+                        </Carousel.Item> */}
                     </Carousel>
                 </div>
             </section>

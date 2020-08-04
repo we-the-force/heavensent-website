@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
 import logo from '../assets/images/feather.png';
-import translateEN from '../locales/en/translation.json'
-import translateES from '../locales/es/translation.json'
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -37,14 +35,19 @@ export default class Navbar extends Component {
         }
     };
 
-    getTrans = (x, y) => {
+    getTrans = (y) => {
+        let trans = this.props.translate[this.props.lang.toUpperCase()];
+        return trans ? trans[y] : '';
+    }
+
+    /* getTrans = (x, y) => {
         if (x === 'en') {
             return translateEN[y]
         } else if (x === 'es') {
             return translateES[y]
         }
         return ''
-    }
+    } */
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
@@ -54,6 +57,7 @@ export default class Navbar extends Component {
     }
 
     render() {
+        const { children } = this.props;
         const { openMenu, visibilityClass, dropdownClass } = this.state;
         return (
             <nav
@@ -70,7 +74,7 @@ export default class Navbar extends Component {
                         element="home"
                     >
                         <a className="nav-link" href="#home">
-                            {this.getTrans(this.props.lang, 'home')}
+                            {this.getTrans('home')}
                         </a>
                     </Scroll>
                     <Scroll
@@ -79,7 +83,7 @@ export default class Navbar extends Component {
                         element="about"
                     >
                         <a className="nav-link" href="#about">
-                            {this.getTrans(this.props.lang, 'about')}
+                            {this.getTrans('about')}
                             {/* ACERCA */}
                         </a>
                     </Scroll>
@@ -89,7 +93,7 @@ export default class Navbar extends Component {
                         element="features"
                     >
                         <a className="nav-link" href="#features">
-                            {this.getTrans(this.props.lang, 'features')}
+                            {this.getTrans('features')}
                             {/* CARACTERISTICAS */}
                         </a>
                     </Scroll>
@@ -99,7 +103,7 @@ export default class Navbar extends Component {
                         element="reviews"
                     >
                         <a className="nav-link" href="#reviews">
-                            {this.getTrans(this.props.lang, 'reviews')}
+                            {this.getTrans('reviews')}
                             {/* RESEÑAS */}
                         </a>
                     </Scroll>
@@ -109,7 +113,7 @@ export default class Navbar extends Component {
                         element="download"
                     >
                         <a className="nav-link" href="#download">
-                            {this.getTrans(this.props.lang, 'downloads')}
+                            {this.getTrans('downloads')}
                             {/* DESCARGAS */}
                         </a>
                     </Scroll>
@@ -119,14 +123,18 @@ export default class Navbar extends Component {
                         element="price"
                     >
                         <a className="nav-link" href="#price">
-                            {this.getTrans(this.props.lang, 'price')}
+                            {this.getTrans('price')}
                             {/* PRECIO */}
                         </a>
                     </Scroll>
 
                     <a className="nav-link" href="https://app.heavensentnow.com">
-                        {this.getTrans(this.props.lang, 'signup')}
+                        {this.getTrans('sign_up')}
                     </a>
+                    <a className="nav-link" onClick={() => { this.props.handLang(); this.handleHamburger(); }}>
+                        {this.getTrans('language_button')}
+                    </a>
+
                 </div>
 
                 <a className="icon hamburger" onClick={() => this.handleHamburger()}>
@@ -142,7 +150,7 @@ export default class Navbar extends Component {
                                 element="home"
                             >
                                 <a className="nav-link" href="#home">
-                                    {this.getTrans(this.props.lang, 'home')}
+                                    {this.getTrans('home')}
                                 </a>
                             </Scroll>
                         </li>
@@ -153,7 +161,7 @@ export default class Navbar extends Component {
                                 element="about"
                             >
                                 <a className="nav-link" href="#about">
-                                    {this.getTrans(this.props.lang, 'about')}
+                                    {this.getTrans('about')}
                                     {/* ACERCA */}
                                 </a>
                             </Scroll>
@@ -165,7 +173,7 @@ export default class Navbar extends Component {
                                 element="features"
                             >
                                 <a className="nav-link" href="#features">
-                                    {this.getTrans(this.props.lang, 'features')}
+                                    {this.getTrans('features')}
                                     {/* CARACTERISTICAS */}
                                 </a>
                             </Scroll>
@@ -177,7 +185,7 @@ export default class Navbar extends Component {
                                 element="reviews"
                             >
                                 <a className="nav-link" href="#reviews">
-                                    {this.getTrans(this.props.lang, 'reviews')}
+                                    {this.getTrans('reviews')}
                                     {/* RESEÑAS */}
                                 </a>
                             </Scroll>
@@ -189,7 +197,7 @@ export default class Navbar extends Component {
                                 element="download"
                             >
                                 <a className="nav-link" href="#download">
-                                    {this.getTrans(this.props.lang, 'downloads')}
+                                    {this.getTrans('downloads')}
                                     {/* DESCARGAS */}
                                 </a>
                             </Scroll>
@@ -201,18 +209,20 @@ export default class Navbar extends Component {
                                 element="price"
                             >
                                 <a className="nav-link" href="#price">
-                                    {this.getTrans(this.props.lang, 'price')}
+                                    {this.getTrans('price')}
                                     {/* PRECIO */}
                                 </a>
                             </Scroll>
                         </li>
                         <li>
                             <a className="nav-link" href="https://app.heavensentnow.com">
-                                {this.getTrans(this.props.lang, 'signup')}
+                                {this.getTrans('sign_up')}
                             </a>
                         </li>
                     </ul>
+
                 </div>
+                {children}
             </nav>
         );
     }

@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
-import translateEN from '../locales/en/translation.json'
-import translateES from '../locales/es/translation.json'
 class Price extends Component {
     getTrans = (y) => {
-        let x = this.props.lang;
-        if (x === 'en') {
-            return translateEN[y]
-        } else if (x === 'es') {
-            return translateES[y]
-        }
-        return ''
+        let trans = this.props.translate[this.props.lang.toUpperCase()];
+        return trans ? trans[y] : '';
     }
     render() {
         return (
@@ -26,7 +19,7 @@ class Price extends Component {
                                     <p className="small">$</p>
                                     <p>5</p>
                                 </div>
-                                <p>PER MONTH</p>
+                                <p>{this.getTrans('per_month')}</p>
                             </div>
                             <div className="plan blue-2 d-flex flex-column justify-content-around align-items-center">
                                 <h3>Standar</h3>
@@ -34,7 +27,7 @@ class Price extends Component {
                                     <p className="small">$</p>
                                     <p>15</p>
                                 </div>
-                                <p>PER MONTH</p>
+                                <p>{this.getTrans('per_month')}</p>
                             </div>
                             <div className="plan blue-3 d-flex flex-column justify-content-around align-items-center">
                                 <h3>Premium</h3>
@@ -42,7 +35,7 @@ class Price extends Component {
                                     <p className="small">$</p>
                                     <p>25</p>
                                 </div>
-                                <p>PER MONTH</p>
+                                <p>{this.getTrans('per_month')}</p>
                             </div>
                         </div>
                     </div>

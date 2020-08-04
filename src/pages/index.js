@@ -12,27 +12,34 @@ import Download from '../components/Download';
 import Price from '../components/Price';
 import Footer from '../components/Footer';
 
-import translateEN from '../locales/en/translation.json'
-import translateES from '../locales/es/translation.json'
-
-/* import appScreen from '../assets/images/splash-app-screen.png'; */
-
 export default class IndexPage extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { lang: 'en' };
+        this.state = {
+            lang: 'en',
+            translate: {},
+        };
+    }
+
+    componentDidMount() {
+        fetch('https://api.heavensentnow.com/landing')
+            .then(res => res.json())
+            .then((data) => {
+                let json = {};
+                data.Landing.forEach(el => {
+                    json[el.lang] = el;
+                });
+                this.setState({ translate: json });
+            })
+            .catch(err => {
+                console.log(err);
+            });
     }
 
     getTrans = (y) => {
-        ;
-        let x = this.state.lang;
-        if (x === 'en') {
-            return translateEN[y]
-        } else if (x === 'es') {
-            return translateES[y]
-        }
-        return ''
+        let trans = this.state.translate[this.state.lang.toUpperCase()];
+        return trans ? trans[y] : '';
     }
 
     handleLang = () => {
@@ -46,7 +53,13 @@ export default class IndexPage extends Component {
     render() {
         return (
             <Layout lang={this.state.lang}>
-                <Navbar lang={this.state.lang}/>
+                <Navbar lang={this.state.lang} translate={this.state.translate} handLang={this.handleLang}>
+                    <button id="lang-btn" onClick={() => this.handleLang()} style={{ cursor: "pointer" }} tabIndex={0} onKeyPress={this.handleKeyPress}>
+                        <p data-lang="en" className={this.state.lang === 'en' ? 'active' : null} >EN</p>
+                        <p> / </p>
+                        <p data-lang="es" className={this.state.lang === 'es' ? 'active' : null}>ES</p>
+                    </button>
+                </Navbar>
                 <header className="masthead d-flex flex-column justify-content-center align-items-center" id="home">
                     <div className="app-screen">
                         <img src={appScreen} alt="" />
@@ -56,22 +69,17 @@ export default class IndexPage extends Component {
                         <img src={arrowDown} alt="" />
                     </div>
                 </header>
-                <About lang={this.state.lang} />
-                <Features lang={this.state.lang} />
-                <Reviews lang={this.state.lang} />
-                <Download lang={this.state.lang} />
-                <Price lang={this.state.lang} />
+                <About lang={this.state.lang} translate={this.state.translate} />
+                <Features lang={this.state.lang} translate={this.state.translate} />
+                <Reviews lang={this.state.lang} translate={this.state.translate} />
+                <Download lang={this.state.lang} translate={this.state.translate} />
+                <Price lang={this.state.lang} translate={this.state.translate} />
                 <section id="logo_foot" className="logo-foot-section d-flex align-items-center justify-content-center">
                     <div className="logo_foot">
                         <img src={logo} alt="" />
                     </div>
                 </section>
-                <Footer lang={this.state.lang}>
-                    <button id="lang-btn" className="d-flex" onClick={() => this.handleLang()} style={{ cursor: "pointer" }} tabIndex={0} onKeyPress={this.handleKeyPress}>
-                        <p data-lang="en" className={this.state.lang === 'en' ? 'active' : null} >EN</p>
-                        <p> / </p>
-                        <p data-lang="es" className={this.state.lang === 'es' ? 'active' : null}>ES</p>
-                    </button>
+                <Footer lang={this.state.lang} translate={this.state.translate}>
                 </Footer>
             </Layout>
         )

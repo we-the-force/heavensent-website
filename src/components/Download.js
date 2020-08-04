@@ -3,19 +3,13 @@ import photo from '../assets/images/Group 12.png';
 import app_store from '../assets/images/apple.png';
 import google_play from '../assets/images/google.png';
 
-import translateEN from '../locales/en/translation.json'
-import translateES from '../locales/es/translation.json'
-
 class Download extends Component {
+    
     getTrans = (y) => {
-        let x = this.props.lang;
-        if (x === 'en') {
-            return translateEN[y]
-        } else if (x === 'es') {
-            return translateES[y]
-        }
-        return ''
+        let trans = this.props.translate[this.props.lang.toUpperCase()];
+        return trans ? trans[y] : '';
     }
+    
     getsqr = (x,y,t,l) => {
         const style = {
             width: x,
