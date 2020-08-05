@@ -36,7 +36,8 @@ export default class Navbar extends Component {
     };
 
     getTrans = (y) => {
-        let trans = this.props.translate[this.props.lang.toUpperCase()];
+        let lang = this.props.lang ? this.props.lang.toUpperCase() : 'EN';
+        let trans = this.props.translate ? this.props.translate[lang] : null;
         return trans ? trans[y] : '';
     }
 
