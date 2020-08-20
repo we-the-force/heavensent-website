@@ -98,6 +98,11 @@ class Price extends Component {
                             <p className="desc">4 {this.getTrans('mem_pers_year')}</p>
                         </div>
                     </div>
+                    <div className="row">
+                        <div className="col-12">
+                            <p className="text-center desc">{this.getTrans('prices_in')}{this.getTrans('coin')}</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         );
