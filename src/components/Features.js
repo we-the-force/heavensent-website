@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import photo from '../assets/images/Frame 14.png';
+import photo from '../assets/images/Frame.png';
 import Carousel from 'react-bootstrap/Carousel';
 
 
