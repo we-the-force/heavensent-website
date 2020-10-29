@@ -7,7 +7,7 @@ import About from '../components/About';
 import appScreen from '../assets/images/LOGO.png';
 import arrowDown from '../assets/images/Vector 7.png';
 import Features from '../components/Features';
-import Reviews from '../components/Reviews';
+// import Reviews from '../components/Reviews';
 import Download from '../components/Download';
 import Price from '../components/Price';
 import Footer from '../components/Footer';
@@ -71,7 +71,7 @@ export default class IndexPage extends Component {
                 </header>
                 <About lang={this.state.lang} translate={this.state.translate} />
                 <Features lang={this.state.lang} translate={this.state.translate} />
-                <Reviews lang={this.state.lang} translate={this.state.translate} />
+                {/* <Reviews lang={this.state.lang} translate={this.state.translate} /> */}
                 <Download lang={this.state.lang} translate={this.state.translate} />
                 <Price lang={this.state.lang} translate={this.state.translate} />
                 <section id="logo_foot" className="logo-foot-section d-flex align-items-center justify-content-center">
