@@ -2,7 +2,7 @@
     "home": "INICIO",
     "signup": "ENTRAR / REGISTRO",
     "about": "ACERCA",
-    "features": "CARACTERISTICAS",
+    "features": "CARACTERÍSTICAS",
     "reviews": "RESEÑAS",
     "downloads": "DESCARGAS",
     "price": "PRECIO",
@@ -29,7 +29,7 @@
         },
         {
             "Title": "Pagos",
-            "Desc": "Procesa en una sola vez tus pagos y suscripciones en caso que así lo desees."
+            "Desc": "Procesa en una sola vez tus pagos en caso que así lo desees."
         },
         {
             "Title": "Contacto a través de notificaciones",

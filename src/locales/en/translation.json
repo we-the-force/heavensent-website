@@ -25,7 +25,7 @@
             "Desc": "Send monetary gifts and provide charitable giving."
         }, {
             "Title": "Payments",
-            "Desc": "Process one time only payments and subscription payments if desired."
+            "Desc": "Process one time only payments if desired."
         }, {
             "Title": "Contact via notifications",
             "Desc": "Contact designated friends and family members via notifications, text, email, or phone automatically at specific time intervals you create."
