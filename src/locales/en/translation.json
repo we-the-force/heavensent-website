@@ -52,9 +52,12 @@
     }],
     "price_title": "PRICING",
     "price_sub": "Select the best plan for you.",
+    "price_plan_one": "Economy",
+    "price_plan_two": "Premium",
+    "price_plan_three": "VIP",
     "text_notes": "Text Notes",
     "pictures": "Pictures",
     "on_demand": "On Demand",
-    "mem_pers_year": "Memories / Person / Years",
+    "mem_pers_year": "Messages / Year",
     "language:": "language:"
 }

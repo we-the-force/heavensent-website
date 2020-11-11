@@ -14,7 +14,7 @@ class Price extends Component {
                         <div className="col-3"></div>
                         <div className="col-9 d-flex justify-content-around">
                             <div className="plan blue-1 d-flex flex-column justify-content-around align-items-center">
-                                <h3>Birthday</h3>
+                                <h3>{this.getTrans('price_plan_one')}</h3>
                                 <div className="price d-flex">
                                     <p className="small">$</p>
                                     <p>39,99</p>
@@ -33,7 +33,7 @@ class Price extends Component {
                                 <h3>VIP</h3>
                                 <div className="price d-flex">
                                     <p className="small">$</p>
-                                    <p>129,99</p>
+                                    <p>109,99</p>
                                 </div>
                                 <p>{this.getTrans('per_month')}</p>
                             </div>
@@ -93,9 +93,9 @@ class Price extends Component {
                         <div className="col-3">
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
-                            <p className="desc">1 {this.getTrans('mem_pers_year')}</p>
-                            <p className="desc">4 {this.getTrans('mem_pers_year')}</p>
-                            <p className="desc">4 {this.getTrans('mem_pers_year')}</p>
+                            <p className="desc">10 {this.getTrans('mem_pers_year')}</p>
+                            <p className="desc">20 {this.getTrans('mem_pers_year')}</p>
+                            <p className="desc">30 {this.getTrans('mem_pers_year')}</p>
                         </div>
                     </div>
                     <div className="row">
