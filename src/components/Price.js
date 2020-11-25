@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 class Price extends Component {
-    getTrans = (y) => {
+    getTrans = y => {
         let trans = this.props.translate[this.props.lang.toUpperCase()];
         return trans ? trans[y] : '';
-    }
+    };
     render() {
         return (
-            <section id="price" className="price-section d-flex flex-column justify-content-top">
+            <section
+                id="price"
+                className="price-section d-flex flex-column justify-content-top"
+            >
                 <div className="container">
                     <h1 className="price-title">{this.getTrans('price_title')}</h1>
                     <h5 className="price-subtitle">{this.getTrans('price_sub')}</h5>
@@ -14,7 +17,7 @@ class Price extends Component {
                         <div className="col-3"></div>
                         <div className="col-9 d-flex justify-content-around">
                             <div className="plan blue-1 d-flex flex-column justify-content-around align-items-center">
-                                <h3>{this.getTrans('price_plan_one')}</h3>
+                                <h3>Economy</h3>
                                 <div className="price d-flex">
                                     <p className="small">$</p>
                                     <p>39,99</p>
@@ -25,7 +28,7 @@ class Price extends Component {
                                 <h3>Premium</h3>
                                 <div className="price d-flex">
                                     <p className="small">$</p>
-                                    <p>99,99</p>
+                                    <p>69,99</p>
                                 </div>
                                 <p>{this.getTrans('per_month')}</p>
                             </div>
@@ -54,9 +57,12 @@ class Price extends Component {
                             <p>{this.getTrans('pictures')}</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
-                            <i className="fa fa-check blue-1" aria-hidden="true"></i>
-                            <i className="fa fa-check blue-2" aria-hidden="true"></i>
-                            <i className="fa fa-check blue-3" aria-hidden="true"></i>
+                            <p className="text blue-1">6 pictures</p>
+                            {/* <i className="fa fa-check blue-1" aria-hidden="true"></i> */}
+                            <p className="text blue-2">12 pictures</p>
+                            {/* <i className="fa fa-check blue-2" aria-hidden="true"></i> */}
+                            <p className="text blue-3">18 pictures</p>
+                            {/* <i className="fa fa-check blue-3" aria-hidden="true"></i> */}
                         </div>
                     </div>
                     <div className="row border-bottom">
@@ -64,9 +70,12 @@ class Price extends Component {
                             <p>Video</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
-                            <i className="fa fa-check blue-1" aria-hidden="true"></i>
-                            <i className="fa fa-check blue-2" aria-hidden="true"></i>
-                            <i className="fa fa-check blue-3" aria-hidden="true"></i>
+                            <p className="text blue-1">4 videos (30" each)</p>
+                            {/* <i className="fa fa-check blue-1" aria-hidden="true"></i> */}
+                            <p className="text blue-2">8 videos (30" each)</p>
+                            {/* <i className="fa fa-check blue-2" aria-hidden="true"></i> */}
+                            <p className="text blue-3">12 videos (30" each)</p>
+                            {/* <i className="fa fa-check blue-3" aria-hidden="true"></i> */}
                         </div>
                     </div>
                     <div className="row border-bottom">
@@ -90,8 +99,7 @@ class Price extends Component {
                         </div>
                     </div>
                     <div className="row border-bottom">
-                        <div className="col-3">
-                        </div>
+                        <div className="col-3"></div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
                             <p className="desc">10 {this.getTrans('mem_pers_year')}</p>
                             <p className="desc">20 {this.getTrans('mem_pers_year')}</p>
@@ -100,7 +108,10 @@ class Price extends Component {
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            <p className="text-center mt-4 price-subtitle">{this.getTrans('prices_in')}{this.getTrans('coin')}</p>
+                            <p className="text-center mt-4 price-subtitle">
+                                {this.getTrans('prices_in')}
+                                {this.getTrans('coin')}
+                            </p>
                         </div>
                     </div>
                 </div>
