@@ -98,16 +98,16 @@ export default class Navbar extends Component {
                             {/* CARACTERISTICAS */}
                         </a>
                     </Scroll>
-                    <Scroll
+                    {/* <Scroll
                         onClick={() => this.handleHamburger()}
                         type="id"
                         element="reviews"
                     >
                         <a className="nav-link" href="#reviews">
                             {this.getTrans('reviews')}
-                            {/* RESEÑAS */}
+                            //RESEÑAS
                         </a>
-                    </Scroll>
+                    </Scroll> */}
                     <Scroll
                         onClick={() => this.handleHamburger()}
                         type="id"
