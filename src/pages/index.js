@@ -62,7 +62,7 @@ export default class IndexPage extends Component {
                 </Navbar>
                 <header className="masthead d-flex flex-column justify-content-center align-items-center" id="home">
                     <div className="app-screen">
-                        <img src={appScreen} alt="" />
+                        <img style={{width: "215px"}} src={appScreen} alt="" />
                     </div>
                     <div className="foot position-absolute d-flex flex-column align-items-center">
                         <p className="text-uppercase">{this.getTrans('home_desc')}</p>
