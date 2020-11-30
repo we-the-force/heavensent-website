@@ -179,7 +179,7 @@ export default class Navbar extends Component {
                                 </a>
                             </Scroll>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Scroll
                                 onClick={() => this.toggleMenu(!openMenu)}
                                 type="id"
@@ -187,10 +187,9 @@ export default class Navbar extends Component {
                             >
                                 <a className="nav-link" href="#reviews">
                                     {this.getTrans('reviews')}
-                                    {/* RESEÑAS */}
                                 </a>
                             </Scroll>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <Scroll
                                 onClick={() => this.toggleMenu(!openMenu)}
