@@ -18,7 +18,7 @@ export default class IndexPage extends Component {
         super(props);
         this.state = {
             lang: 'en',
-            translate: {},
+            translate: {}
         };
     }
 
@@ -50,6 +50,7 @@ export default class IndexPage extends Component {
             this.setState({ lang: "en" });
         }
     };
+
     render() {
         return (
             <Layout lang={this.state.lang}>
@@ -62,7 +63,7 @@ export default class IndexPage extends Component {
                 </Navbar>
                 <header className="masthead d-flex flex-column justify-content-center align-items-center" id="home">
                     <div className="app-screen">
-                        <img style={{width: "215px"}} src={appScreen} alt="" />
+                        <img style={{ width: "215px" }} src={appScreen} alt="" />
                     </div>
                     <div className="foot position-absolute d-flex flex-column align-items-center">
                         <p className="text-uppercase">{this.getTrans('home_desc')}</p>
@@ -76,7 +77,7 @@ export default class IndexPage extends Component {
                 <Price lang={this.state.lang} translate={this.state.translate} />
                 <section id="logo_foot" className="logo-foot-section d-flex align-items-center justify-content-center">
                     <div className="logo_foot">
-                        <img src={logo} alt="" />
+                        <img style={{ width: "215px" }} src={logo} alt="" />
                     </div>
                 </section>
                 <Footer lang={this.state.lang} translate={this.state.translate}>
