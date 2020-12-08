@@ -114,6 +114,13 @@ class Price extends Component {
                             </p>
                         </div>
                     </div>
+                    <div className="row">
+                        <div className="col-12">
+                            <p className="text-center mt-4 price-subtitle">
+                                {this.getTrans('disclaimer')}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
         );
