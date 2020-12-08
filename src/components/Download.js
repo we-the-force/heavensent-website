@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import photo from '../assets/images/Group 12.png';
-import app_store from '../assets/images/apple.png';
-import google_play from '../assets/images/google.png';
+// import app_store from '../assets/images/apple.png';
+// import google_play from '../assets/images/google.png';
 
 class Download extends Component {
     
@@ -38,10 +38,10 @@ class Download extends Component {
                     </div>
                     <div className="stores">
                         <a href="#download" className="app_store">
-                            <img src={app_store} alt=""/>
+                            <img src={this.getTrans('apple_store.url')} alt=""/>
                         </a>
                         <a href="#download" className="google_play">
-                            <img src={google_play} alt=""/>
+                            <img src={this.getTrans('google_store.url')} alt=""/>
                         </a>
                     </div>
                 </div>
