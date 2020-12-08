@@ -108,7 +108,7 @@ class Price extends Component {
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            <p className="text-center mt-4 price-subtitle">
+                            <p className="text-center mt-4 price-subtitle" style="margin-bottom: 0;">
                                 {this.getTrans('prices_in')}
                                 {this.getTrans('coin')}
                             </p>
