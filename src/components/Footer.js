@@ -24,7 +24,7 @@ export default class Footer extends Component {
             {/* <p>{this.getTrans('language')}</p>
             {children} */}
           </div>
-          <p>Copyright &copy; HevenSent 2020</p>
+          <p>Copyright &copy; HeavenSent 2020</p>
         </div>
       </footer>
     );

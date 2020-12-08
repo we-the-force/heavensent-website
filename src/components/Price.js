@@ -57,11 +57,11 @@ class Price extends Component {
                             <p>{this.getTrans('pictures')}</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
-                            <p className="text blue-1">24 pictures</p>
+                            <p className="text blue-1">24 {this.getTrans('picture')}</p>
                             {/* <i className="fa fa-check blue-1" aria-hidden="true"></i> */}
-                            <p className="text blue-2">48 pictures</p>
+                            <p className="text blue-2">48 {this.getTrans('picture')}</p>
                             {/* <i className="fa fa-check blue-2" aria-hidden="true"></i> */}
-                            <p className="text blue-3">72 pictures</p>
+                            <p className="text blue-3">72 {this.getTrans('picture')}</p>
                             {/* <i className="fa fa-check blue-3" aria-hidden="true"></i> */}
                         </div>
                     </div>
@@ -70,11 +70,11 @@ class Price extends Component {
                             <p>Video</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
-                            <p className="text blue-1">5 videos (30" each)</p>
+                            <p className="text blue-1">5 {this.getTrans('video')} (30" each)</p>
                             {/* <i className="fa fa-check blue-1" aria-hidden="true"></i> */}
-                            <p className="text blue-2">10 videos (30" each)</p>
+                            <p className="text blue-2">10 {this.getTrans('video')} (30" each)</p>
                             {/* <i className="fa fa-check blue-2" aria-hidden="true"></i> */}
-                            <p className="text blue-3">15 videos (30" each)</p>
+                            <p className="text blue-3">15 {this.getTrans('video')} (30" each)</p>
                             {/* <i className="fa fa-check blue-3" aria-hidden="true"></i> */}
                         </div>
                     </div>
