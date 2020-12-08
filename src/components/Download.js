@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import photo from '../assets/images/Group 12.png';
+import photo from '../assets/images/Group_12.jpg';
 // import app_store from '../assets/images/apple.png';
 // import google_play from '../assets/images/google.png';
 
