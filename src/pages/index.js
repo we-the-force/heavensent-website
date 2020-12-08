@@ -30,6 +30,7 @@ export default class IndexPage extends Component {
                 data.Landing.forEach(el => {
                     json[el.lang] = el;
                 });
+                console.log(data.Landing);
                 this.setState({ translate: json });
             })
             .catch(err => {
