@@ -38,10 +38,10 @@ class Download extends Component {
                     </div>
                     <div className="stores">
                         <a href="#download" className="app_store">
-                            <img src='https://api.heavensentnow.com/'{this.getTrans('apple_store').url} alt=""/>
+                            <img src="https://api.heavensentnow.com/{this.getTrans('apple_store').url}" alt=""/>
                         </a>
                         <a href="#download" className="google_play">
-                            <img src='https://api.heavensentnow.com/'{this.getTrans('google_store').url} alt=""/>
+                            <img src="https://api.heavensentnow.com/{this.getTrans('google_store').url}" alt=""/>
                         </a>
                     </div>
                 </div>
