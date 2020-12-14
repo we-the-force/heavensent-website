@@ -70,11 +70,11 @@ class Price extends Component {
                             <p>Video</p>
                         </div>
                         <div className="col-9 d-flex justify-content-around align-items-center">
-                            <p className="text blue-1">5 {this.getTrans('video')} (30" each)</p>
+                            <p className="text blue-1">5 {this.getTrans('video')} (30" {this.getTrans('each')})</p>
                             {/* <i className="fa fa-check blue-1" aria-hidden="true"></i> */}
-                            <p className="text blue-2">10 {this.getTrans('video')} (30" each)</p>
+                            <p className="text blue-2">10 {this.getTrans('video')} (30" {this.getTrans('each')})</p>
                             {/* <i className="fa fa-check blue-2" aria-hidden="true"></i> */}
-                            <p className="text blue-3">15 {this.getTrans('video')} (30" each)</p>
+                            <p className="text blue-3">15 {this.getTrans('video')} (30" {this.getTrans('each')})</p>
                             {/* <i className="fa fa-check blue-3" aria-hidden="true"></i> */}
                         </div>
                     </div>
